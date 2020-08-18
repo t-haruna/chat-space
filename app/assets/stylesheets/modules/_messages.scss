@@ -1,3 +1,44 @@
 * {
   box-sizing: border-box;
 }
+
+.Side{
+  width: 300px;
+  height: 100vh;
+  
+  &__username{
+    height: 100px;
+    background-color: #253141;
+  }
+  &__grouplist{
+    height: calc(100vh - 100px);
+    background-color: #2f3e51;
+  }
+}
+
+
+.Main{
+  width: calc(100vw - 300px);
+  height: 100vh;
+  
+  &__group-info{
+    height: 100px;
+    background-color: #ffffff;
+    border-bottom:1px solid #eeeeee;
+
+  }
+  &__message-list{
+    height: calc(100vh - 100px - 90px);
+    background-color: #fafafa;
+
+  }
+  &__message-form{
+    height: 90px;
+    background-color: #d2d2d2;
+
+  }
+}
+
+.wrapper{
+  display: flex;
+}
