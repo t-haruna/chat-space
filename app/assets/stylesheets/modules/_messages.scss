@@ -5,10 +5,12 @@
 .Side{
   width: 300px;
   height: 100vh;
-  
   &__username{
     height: 100px;
     background-color: #253141;
+   display: flex;
+   align-items: center;
+   justify-content: center;
   }
   &__grouplist{
     height: calc(100vh - 100px);
@@ -16,6 +18,37 @@
   }
 }
 
+.top-items{
+  background-color: #253141;
+  height: 20px;
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+  &__name{
+    background-color: #253141;
+    display: inline;
+    line-height: 20px;
+    color: #ffffff;
+  }
+  &__icon{
+   width: 60px;
+   line-height: 20px;
+   background-color: #253141;
+   display: flex;
+   justify-content: flex-end;
+  }
+}
+
+.icon{
+  
+  line-height: 20px;
+  color: #ffffff;
+  &__cog{
+    padding-left: 5px;
+  }
+  
+  
+}
 
 .Main{
   width: calc(100vw - 300px);
