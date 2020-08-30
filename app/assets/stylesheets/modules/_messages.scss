@@ -63,10 +63,14 @@
   &__message-form{
     height: 90px;
     background-color: #d2d2d2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
+}
+
+.Form{
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+
 }
 
 .wrapper{
@@ -105,6 +109,7 @@
     &--member{
       font-size: 12px;
       color: #999999;
+      display: flex;
     }
   }
   &__edit{
@@ -123,11 +128,9 @@
 }
 
 .group-contents{
-  height: calc(100vh - 100px - 90px);
   margin-left: 40px;
   &__box{
     padding: 35px 0 12px 0;
-    
     &--name{
       color: #333333;
       font-size: 16px;
@@ -152,14 +155,12 @@
   position: relative;
   background-color: #ffffff;
   &--type{
-    &__input{
-      border: 0;
-      padding:0 40px 0 10px;
-      height: 50px;
-      width: 100%; 
-    }
+    border: 0;
+    padding-left: 10px;
+    height: 50px;
+    width: 100%; 
   }
-  &--iconbox{
+  &--icon{
     position: absolute;
     bottom: 0;
     right: 0;
@@ -170,8 +171,7 @@
   }
 }
 
-.message-form__btn{
-  &--send{
+.message-form__btn--send{
     color: #ffffff;
     font-size: 16px;
     background-color: #38aef0;
@@ -180,11 +180,14 @@
     text-align: center;
     border: 0;
     height: 50px;
-  }
 }
 
-.form-box__image{
+.message-form__box--icon{
   input{
   display: none;
   }
+}
+
+.menber{
+  display: inline;
 }
